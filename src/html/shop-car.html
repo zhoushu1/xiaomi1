@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resize.css">
+    <link rel="stylesheet" href="../css/shop-car.min.css">
+    <link rel="stylesheet" href="../iconfont/345/iconfont.css">
+    <script src="../js/cookie.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/shopcar.js"></script>
+    <script src="../js/quanxuan.js"></script>
+    <script src="../js/zongji.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="site-header">
+            <div class="banner">
+                <div class="logo">
+                    <a href="../html/index.html"><img src="../img/logo.png" alt="logo图"></a>
+                </div>
+                <div class="header-title">
+                    <h2>我的购物车</h2>
+                    <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+                </div>
+                <div class="topbar-info">
+                    <a href="../html/denglu.html">登录</a>
+                    <span>|</span>
+                    <a href="../html/zhuce.html">注册</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容区 -->
+    <main>
+        <div class="main">
+            <div class="banner main-box">
+                <div class="box-one">
+                    <input type="checkbox" value="" class="box-one-ck">
+                    <span>全选</span>
+                    <span>商品名称</span>
+                    <span>单价</span>
+                    <span>数量</span>
+                    <span>小计</span>
+                    <span>操作</span>
+                </div>
+                <div class="box-two">
+                    <!-- <div class="box-two-list">
+                        <input type="checkbox" class="box-two-ck">
+                        <div class="p-title">
+                            <img src="../img/yinxiang.jpg" alt="">
+                            <h3><a href="#">小米手环 石墨黑</a></h3>
+                        </div>
+                        <span style="display: inline-blzock;width: 200px;line-height: 90px;margin-right: 110px;">199元</span>
+                        <input type="number" id="num" class="box-two-num" value="1" style="width: 100px;height:38px;">
+                        <span style="margin-left: 120px;color: #ff6700">199元</span>
+                        <span style="margin-left: 110px"><a href="#" style="color: #757575;font-size: 18px">×</a></span>
+                    </div> -->
+                </div>
+                <div class="car-bar">
+                    <div class="car-bar-one"><span>合计:</span><span class="allsum" style="margin-left: 10px;">0.00</span><span>元</span><a href="">去结算</a></div>
+                </div>
+                <div class="cart-recommend">
+                    <h2><span>买购物车中商品的人还买了</span></h2>
+                    <div class="home-appliances">
+                        <div class="container">
+                            <ul class="home-appliances-list">
+                                <li style="margin-left:0">
+                                    <a href="#">
+                                        <img src="../img/dp4.jpg" alt="">
+                                        <p>小米小爱音箱 万能遥控版</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">8146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../html/yxxq.html" target="get">
+                                        <img src="../img/zn3.jpg" alt="">
+                                        <p>小米小爱音箱 万能遥控版</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">8146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn4.jpg" alt="">
+                                        <p>小米米家智能门锁 推拉式</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">1699元</p>
+                                        <p class="p-hping">2146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn5.png" alt="">
+                                        <p>小米手环4 石墨黑</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">169元</p>
+                                        <p class="p-hping">1146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn6.jpg" alt="">
+                                        <p>米家电饭煲4L</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">946人好评</p>
+                                    </a>
+                                </li>
+                                <li style="margin-left:0">
+                                    <a href="#">
+                                        <img src="../img/dp6.jpg" alt="">
+                                        <p>米家电饭煲4L</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">946人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn3.jpg" alt="">
+                                        <p>小米小爱音箱 万能遥控版</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">8146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn4.jpg" alt="">
+                                        <p>小米米家智能门锁 推拉式</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">1699元</p>
+                                        <p class="p-hping">2146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn5.png" alt="">
+                                        <p>小米手环4 石墨黑</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">169元</p>
+                                        <p class="p-hping">1146人好评</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../img/zn6.jpg" alt="">
+                                        <p>米家电饭煲4L</p>
+                                        <p class="price" style="color:rgb(255, 136, 0)">199元</p>
+                                        <p class="p-hping">946人好评</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 足部 -->
+    <footer class="footer">
+        <div class="banner">
+            <div class="footer-sercice" style="clear: both;">
+                <ul>
+                    <li><i class="iconfont">&#xe518;</i><a href="#">预约维修服务</a></li>
+                    <li><i class="iconfont">&#xe622;</i><a href="#">7天无理由退货</a></li>
+                    <li><i class="iconfont">&#xe605;</i><a href="#">15天免费换货</a></li>
+                    <li><i class="iconfont">&#xe69d;</i><a href="#">满150元包邮</a></li>
+                    <li><i class="iconfont">&#xe501;</i><a href="#">520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer-links" style="height:192px;">
+                <div class="links-left" style="height:112px;">
+                    <div>
+                        <p>帮助中心</p>
+                        <p>账户管理</p>
+                        <p>购物指南</p>
+                        <p>订单操作</p>
+                    </div>
+                    <div>
+                        <p>服务支持</p>
+                        <p>售后政策</p>
+                        <p>自助服务</p>
+                        <p>相关下载</p>
+                    </div>
+                    <div>
+                        <p>线下门店</p>
+                        <p>小米之家</p>
+                        <p>服务网点</p>
+                        <p>授权体验店</p>
+                    </div>
+                    <div>
+                        <p>关于小米</p>
+                        <p>了解小米</p>
+                        <p>加入小米</p>
+                        <p>投资者关系</p>
+                    </div>
+                    <div>
+                        <p>关注我们</p>
+                        <p>新浪微博</p>
+                        <p>官方微信</p>
+                        <p>联系我们</p>
+                    </div>
+                    <div>
+                        <p>特色服务</p>
+                        <p>F 码通道</p>
+                        <p>礼物码</p>
+                        <p>防伪查询</p>
+                    </div>
+                </div>
+                <div class="links-right">
+                    <p class="phone">400-100-5678</p>
+                    <p>周一至周日 8:00-18:00</p>
+                    <p>（仅收市话费）</p>
+                    <a href="#">人工客服</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-info">
+            <div class="banner">
+                <div class="info-text" style="height:118px;">
+                    <div class="logo-left">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+                    <div class="info-text-right">
+                        <p class="sites">小米商城|MIUI|米家|米聊|多看|游戏|路由器|米粉卡|政企服务|小米天猫店|隐私政策|商城用户协议|账号协议|问题反馈|廉正举报|诚信合规|Select Region</p>
+                        <p class="text-list">
+                            © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号<br> （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告<br> 增值电信业务许可证 网络食品经营备案（京）【2018】WLSPJYBAHF-12 食品经营许可证<br> 违法和不良信息举报电话：171-5104-4404
+                            知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                        </p>
+                        <div class="info-links">
+                            <a href=""><img src="../img/zb1111.png" alt=""></a>
+                            <a href=""><img src="../img/zb2222.png" alt=""></a>
+                            <a href=""><img src="../img/zb3333.png" alt=""></a>
+                            <a href=""><img src="../img/zb4444.png" alt=""></a>
+                            <a href=""><img src="../img/zb5555.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slogan"></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- <script>
+        $(function() {
+            var shop = cookie.get('shop');
+            if (shop) {
+                shop = JSON.parse(shop);
+                var idList = shop.map(elm => elm.id).join();
+                $.ajax({
+                    type: "get",
+                    url: "../lib/shop.php",
+                    data: {
+                        "idList": idList
+                    },
+                    dataType: "json",
+                    success: function(res) {
+                        var template = "";
+                        res.forEach((elm, i) => {
+                            var pic = JSON.parse(elm.pic);
+                            var arr = shop.filter((val, i) => {
+                                return val.id === elm.id;
+                            });
+                            template = `
+                    <div class="box-two-list">
+                    <input type="checkbox" class="box-two-ck hehe" id="p-${elm.id}" value="${((arr[0].num*elm.price).toFixed(2))}">
+                    <div class="p-title">
+                        <img src="${pic[0].src}" alt="">
+                        <h3><a href="#">${elm.title}</a></h3>
+                    </div>
+                    <span style="display: inline-block;width: 130px;line-height: 90px;margin-right: 50px;">${elm.price}元</span>
+                    <input type="number" class="box-two-num" value="${arr[0].num}" style="width: 100px;height:38px;">
+                    <span style="display: inline-block;text-align:center;width:150px;margin-left: 65px;color: #ff6700">${((arr[0].num*elm.price).toFixed(2))}元</span>
+                    <span style="display: inline-block;text-align:center;width:30px;margin-left: 50px"><a href="#" style="color: #757575;font-size: 18px">×</a></span>
+                </div> 
+                    `;
+                            $('.box-two').append(template);
+                        });
+                    }
+                });
+            }
+        });
+    </script> -->
+    <!-- <script>
+        $(function() {
+            $('.box-one-ck').on('click', function() {
+                checkall();
+            })
+
+            function checkall() {            
+                var allok = document.querySelector(".box-one-ck");            
+                var item = document.querySelectorAll(".box-two-ck");
+                console.log(item);          
+                if (allok.checked) {               
+                    for (var j = 0; j < item.length; j++) {
+                        item[j].checked = true;
+                    } 
+                } else {
+                    for (var j = 0; j < item.length; j++) {
+                        item[j].checked = false;
+                    }
+                }        
+            }
+        })
+    </script> -->
+
+    <!-- <script>
+        $(function() {
+            var allok = document.querySelector(".main-box"); 
+            var item = document.querySelectorAll(".box-two-ck");
+            var allsum = document.querySelector(".allsum");
+            var arr = [];
+            allok.addEventListener('click', function(ev) {
+                ev = event || ev;
+                var target = ev.target || ev.srcElement;
+                var sum = 0;            
+                var price = target.value; 
+
+                arr.push(price);
+                for (var i = 0; i < arr.length; i++) {
+                    sum += parseFloat(arr[i]);
+                }
+                allsum.innerHTML = sum;   
+
+            }) 
+        })
+    </script> -->
+</body>
+
+</html>

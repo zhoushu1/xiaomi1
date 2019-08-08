@@ -1,0 +1,124 @@
+.footer {
+  margin-top: 10px;
+}
+
+.footer .footer-sercice {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer .footer-sercice li {
+  float: left;
+  width: 238px;
+  border-right: 1px solid #e0e0e0;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footer .footer-sercice li i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.footer .footer-sercice li a {
+  color: #616161;
+  font-size: 16px;
+}
+
+.footer .footer-sercice li a:hover {
+  color: #ff6700;
+  text-decoration: none;
+}
+
+.footer .footer-links {
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+.footer .footer-links .links-left {
+  width: 960px;
+  float: left;
+}
+
+.footer .footer-links .links-left div {
+  float: left;
+  width: 160px;
+  height: 112px;
+}
+
+.footer .footer-links .links-left div p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.footer .footer-links .links-right {
+  float: right;
+  width: 221px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+  font-size: 12px;
+}
+
+.footer .footer-links .links-right .phone {
+  margin: 0 0 5px;
+  font-size: 22px;
+  line-height: 1;
+  color: #ff6700;
+  text-align: center;
+}
+
+.footer .footer-links .links-right a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ff6700;
+  text-decoration: none;
+  color: #ff6700;
+  margin-left: 50px;
+}
+
+.footer .site-info {
+  background: #fafafa;
+  padding: 20px 0 20px;
+}
+
+.footer .site-info .logo-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer .site-info .info-text-right {
+  float: left;
+}
+
+.footer .site-info .info-text-right p {
+  margin: 0;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.footer .site-info .info-text-right .sites {
+  color: #757575;
+}
+
+.footer .site-info .info-text-right .text-list {
+  color: #b0b0b0;
+}
+
+.footer .site-info .info-text-right .info-links img {
+  width: 85px;
+  height: 28px;
+}
+
+.footer .site-info .slogan {
+  clear: both;
+  margin: 30px auto 0;
+  width: 267px;
+  height: 19px;
+  background: url(../img/logan2019.png) no-repeat center 0;
+}

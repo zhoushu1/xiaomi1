@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1564800442836'); /* IE9 */
+  src: url('iconfont.eot?t=1564800442836#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ0AAsAAAAACGgAAAPoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEKINlATYCJAMQCwoABCAFhG0HQRtQB8gOJRHBwABgwAlAPHy/Xzv3/be7uCfRyFA9kUhWTULDo1jJlEIohMJ0vBHKDuFpVw7QTXQxKGuTLivSpekDYvAC/ueY6fL5wPKvbS5RyRFBo70BjhJoQFF90YCnAYg3jF3QEncTqDMkAm+5qEICTGXmoECc4CoEmGb0cgMu1KjKFTOzeAYiNemGfwEAT8Hfxx+IC1OSUsEcubpXqAQ5H+JnQsHV/yFaPAQQTGcFm0eBaUAmDirtWwSRb5pAnRopNAuosX6S+BA/tXom/P8fCY8ir0FyQ//xElFmyhsgdsZf8CF2+InCCrIIPoUJEnyQGTWoxQsA/pnqjmm+OMkNDT2BgRYWjY2n9BMJ81TKPZezz/qwrIzj5Awjpel2yYwdzrJZO9YsdJLO3Gkx/ny4fPY851krkHFuC7aKlW2K2sYbyiGvxXgm87DHgd8GLKEjaMkF2nFG2zj6Cg2GRG6MZJjAmeNdVnPyzZz/UPYaa36Cjphhzrt13sSqxq9duGbHrnWLXWaHrziwZOvZ88eXha2Tr2PH0SH0kFqp/PpQiUR2bWj9+vPjz4ZeHQIFQ24KIRTetLQQuuIkzWr5hj2Cz58FULKHcqEYj3BArnzf73hmZs8eYXDOXj/sdbeTh8ix+CQbove+/gCqNvavJCVpWaP7pchnhymT4/2a80tkwbHJHbGenh1QEos5WQ5+knjvsFYkRT66X1ZJmuTV+ZtB+d5NnmWhkWHiEaVdt4+4A74+zIndHQFVgtBSSVNdq6AYaeJijQ1oPlkcngj+33XYRflEubXHX3zX/uDE/u2j9PaNhaM1uRdKfers8AvpOasOT55u0RxeVXul78B7AycG9XlZ9LJP0EQQA6D6QbCW/wcgvfEH/PZeNq+Nme02GV9rLB674l3tvC/Iqw7JoLgC4N8JOgt+sqBjUdZEpiFnRezwdUe2koqQUGeZ+LUh2tybQtnZOZFQozOBpGIQCjWGkRk7DSX1ZqCsxhzUmVI8v147kkDkWkwaCSC02AxJk1cotLiIzNi7UNLlLZS1hADqrIXDivVGAzfPJ1GEQpWwsy/EFYQOs02UeZhch6qMGoRMiwK8DCUNuBPGRsXkg8WoDiWnGGPopYqjKAxiJKGFRWA/VKMhoJ4kulEFFdVFUfq06Gis6pWiFIQWmFtCQiEoKCWoU18QToGgg3nlKeaF36+DUjHSQJANBVV2GRTJAG8eihUlpgOyWK7rVHAr9xj0ohKHQsFAGBJBCyoCVpTG8hEgfXW3bigFSpSuAR69NNGoFNZVHrW8UvuGG6COeU6OFEXkKCnvGHEVYRT0wXWmGkKBUPehAwA=') format('woff2'),
+  url('iconfont.woff?t=1564800442836') format('woff'),
+  url('iconfont.ttf?t=1564800442836') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1564800442836#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-duigou:before {
+  content: "\e50d";
+}
+
+.icon-xin:before {
+  content: "\e604";
+}
+
+.icon-location:before {
+  content: "\e506";
+}
+

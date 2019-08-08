@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .green {
+            color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/zhuce.min.css">
+    <script src="../js/jquery.js"></script>
+    <!-- <script src="../js/zhuce.js"></script> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <a href="../html/index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+        <h3>注册小米账号</h3>
+        <p class="item">请设置的账号和密码:</p>
+        <form action="../lib/reg.php" method="POST" id="myform">
+            <p><input class="username" name="username" type="text" placeholder="请输入用户名"><span class="span-list" style="margin-left: 20px;"></span></p>
+            <p><input class="set-password" name="password" type="password" placeholder="请输入密码" name="password"><span class="span-list" style="margin-left: 20px;"></span></p>
+            <p><input class="q-password" type="password" placeholder="请输入确认密码" name="password"><span class="span-list" style="margin-left: 20px;"></span></p>
+            <p><input class="btn" type="submit" value="提交" disabled></p>
+        </form>
+    </div>
+    <!-- 足部 -->
+    <div class="footer">
+        <ul class="list">
+            <li><a href="#">简体</a></li><span>|</span>
+            <li><a href="#">繁体</a></li><span>|</span>
+            <li><a href="#">English</a></li><span>|</span>
+            <li><a href="#">常见问题</a></li><span>|</span>
+            <li><a href="#">隐私政策</a></li>
+        </ul>
+        <p><span>小米公司版权所有-京ICP备10046444-</span>
+            <img src="../img/gh.png" alt="">
+            <span>京公网安备11010802020134号-京ICP证110507号</span></p>
+    </div>
+    <script>
+        $(function() {
+            var aInput = $('#myform>p>input');
+            var aSpan = $('#myform>p>span');
+            aInput[0].onfocus = function() {
+                aSpan[0].innerHTML = '请输入以字母开头的6-16位用户名';
+                aSpan[0].style.color = "black"
+            }
+            aInput[0].onblur = function() {
+                if (this.value != '') {
+                    var reg = /^[A-z]\w{5,15}$/;
+                    if (reg.test(this.value)) {
+                        aInput[0].style.border = '';
+                        aSpan[0].innerHTML = '√';
+                        aSpan[0].classList.add('green');
+                    } else {
+                        aSpan[0].innerHTML = '用户名格式错误';
+                        aSpan[0].style.color = "red";
+                    }
+                } else {
+                    aSpan[0].innerHTML = '用户名不能为空';
+                    aSpan[0].style.color = "red";
+                    aInput[0].style.border = "1px solid red";
+                }
+                check();
+            }
+
+            aInput[1].onfocus = function() {
+                aSpan[1].innerHTML = '请输入6-16位的密码';
+                aSpan[1].style.color = "black"
+            }
+            aInput[1].onblur = function() {
+                if (this.value != '') {
+                    var reg = /^\w{6,16}$/
+                    if (reg.test(this.value)) {
+                        aInput[1].style.border = '';
+                        aSpan[1].innerHTML = '√';
+                        aSpan[1].classList.add('green');
+
+                    } else {
+                        aSpan[1].innerHTML = '密码格式错误';
+                        aSpan[1].style.color = "red";
+                    }
+                } else {
+                    aSpan[1].innerHTML = '密码不能为空';
+                    aSpan[1].style.color = "red";
+                    aInput[1].style.border = "1px solid red";
+                }
+                check();
+            }
+
+            aInput[2].onfocus = function() {
+                aSpan[2].innerHTML = '请再次确认密码';
+                aSpan[2].style.color = "black";
+            }
+            aInput[2].onblur = function() {
+                if (this.value != '') {
+                    if (this.value == aInput[1].value) {
+                        aInput[2].style.border = '';
+                        aSpan[2].innerHTML = "√";
+                        aSpan[2].classList.add('green');
+                    } else {
+                        aSpan[2].innerHTML = "两次密码不一致";
+                        aSpan[2].style.color = "red";
+
+                    }
+                } else {
+                    aSpan[2].innerHTML = " ";
+                    aSpan[2].style.color = "red";
+                    aInput[2].style.border = "1px solid red";
+
+                }
+                check();
+            }
+
+            function check() {
+                var oSpanll = $('#myform>p>.green');
+                console.log(oSpanll)
+                    // var pass= $('input[data-pass="true"]');
+                if (oSpanll.length == 3) {
+                    aInput[3].removeAttribute('disabled');
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

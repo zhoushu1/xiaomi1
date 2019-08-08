@@ -1,0 +1,419 @@
+.site-topbar {
+  width: 100%;
+  background-color: #333;
+  line-height: 40px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.site-topbar a {
+  color: #b0b0b0;
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.site-topbar a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.site-topbar .container {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.site-topbar .container .topbar-nav {
+  float: left;
+  color: #b0b0b0;
+}
+
+.site-topbar .container .topbar-nav .box {
+  display: none;
+}
+
+.site-topbar .container .topbar-nav .ewm:hover .box {
+  display: block;
+}
+
+.site-topbar .container .topbar-nav .sep {
+  font-size: 0.5em;
+  color: #424242;
+}
+
+.site-topbar .container .topbar-info {
+  float: right;
+  margin-right: 15px;
+}
+
+.site-topbar .container .topbar-cart {
+  float: right;
+  width: 120px;
+  background: #424242;
+  text-align: center;
+}
+
+.site-topbar .container .topbar-cart a {
+  position: relative;
+  z-index: 32;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #b0b0b0;
+  background: #424242;
+}
+
+.site-topbar .container .topbar-cart a i {
+  font-size: 18px;
+}
+
+.site-header {
+  position: relative;
+  z-index: 20;
+  height: 100px;
+}
+
+.site-header .container {
+  width: 1226px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.site-header .container .header-logo {
+  float: left;
+  width: 62px;
+  margin-top: 22px;
+}
+
+.site-header .container .header-logo .logo {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  background-color: #ff6700;
+  background: url(../img/logo.png) no-repeat 50% 50%;
+}
+
+.site-header .container .header-nav {
+  float: left;
+  width: 720px;
+  margin-left: 120px;
+}
+
+.site-header .container .header-nav .nav-list {
+  position: relative;
+  z-index: 10;
+  float: left;
+  width: 690px;
+  height: 88px;
+  margin: 0;
+  padding: 12px 0 0 30px;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.site-header .container .header-nav .nav-list li {
+  float: left;
+}
+
+.site-header .container .header-nav .nav-list li .link {
+  text-decoration: none;
+  display: block;
+  padding: 26px 10px 38px;
+  color: #333;
+}
+
+.site-header .container .header-search {
+  float: right;
+  width: 260px;
+}
+
+.site-header .container .header-search .search-form {
+  position: relative;
+  width: 260px;
+  height: 50px;
+}
+
+.site-header .container .header-search .search-form .search-text {
+  position: absolute;
+  top: 24px;
+  right: 50px;
+  z-index: 1;
+  width: 223px;
+  height: 48px;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 48px;
+  outline: 0;
+  transition: all .2s;
+}
+
+.site-header .container .header-search .search-form .search-btn {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  z-index: 2;
+  width: 51px;
+  height: 48px;
+  border: 1px solid #e0e0e0;
+  font-size: 24px;
+  line-height: 24px;
+  background: #fff;
+  color: #616161;
+  outline: 0;
+  transition: all .2s;
+}
+
+.main .product-box {
+  position: relative;
+  height: 63px;
+  width: 100%;
+  margin: 0 0 30px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #616161;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
+}
+
+.main .product-box span {
+  display: inline-block;
+  margin: 0.25em;
+}
+
+.main .product-box h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #212121;
+  float: left;
+}
+
+.main .product-box .right {
+  float: right;
+  margin: 17px 0 0 0;
+  font-size: 14px;
+}
+
+.main .product-box .right a {
+  color: #616161;
+}
+
+.main .main-left {
+  float: left;
+  width: 500px;
+}
+
+.main .main-left img {
+  width: 580px;
+  height: 580px;
+}
+
+.main .main-right {
+  float: right;
+}
+
+.main .main-right h2 {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  color: #212121;
+}
+
+.main .main-right .main-one {
+  color: #b0b0b0;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.main .main-right .main-two {
+  margin-bottom: 0;
+  color: #ff6700;
+  font-size: 15px;
+  margin-top: 14px;
+}
+
+.main .main-right .main-three {
+  color: #ff6700;
+  font-size: 16px;
+  margin: 12px 0 20px;
+}
+
+.main .main-right .main-zp {
+  padding: 10px 0;
+  margin-bottom: 30px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.main .main-right .main-zp span {
+  display: inline-block;
+  width: 80px;
+  padding: 2px 0;
+  text-align: center;
+  background: #ff6700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.main .main-right .main-zp i {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  margin-left: 5px;
+}
+
+.main .main-right .main-adr {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  padding: 25px 40px 30px 37px;
+  margin-bottom: 20px;
+}
+
+.main .main-right .main-adr i {
+  font-size: 30px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.main .main-right .main-adr span {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.main .main-right .main-adr span:nth-child(5) {
+  color: #ff6700;
+}
+
+.main .main-right .main-adr p {
+  font-size: 14px;
+  color: #ff6700;
+  margin-left: 45px;
+}
+
+.main .main-right .main-four {
+  line-height: 1;
+  font-size: 18px;
+}
+
+.main .main-right ul {
+  margin: 15px 0 6px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.main .main-right ul li {
+  float: left;
+  margin-left: 6px;
+  margin-top: 15px;
+  line-height: 42px;
+  height: 45px;
+  border-color: #ccc;
+}
+
+.main .main-right ul li a {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main .main-right ul li a:hover {
+  text-decoration: none;
+  border: 1px solid #ff6700;
+}
+
+.main .main-right .main-zj {
+  background: #f9f9fa;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.main .main-right .main-zj .zj-one span {
+  line-height: 30px;
+  color: #616161;
+  font-size: 14px;
+}
+
+.main .main-right .main-zj .zj-one span:nth-child(1) {
+  margin-left: 15px;
+}
+
+.main .main-right .main-zj .zj-one span:nth-child(2) {
+  float: right;
+  display: block;
+}
+
+.main .main-right .main-zj .zj-three {
+  line-height: 30px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.main .main-right .main-zj .zj-three i {
+  font-style: normal;
+  font-size: 16px;
+  color: #424242;
+  margin-right: 10px;
+}
+
+.main .main-right .main-zj .zj-three #num {
+  width: 100px;
+  height: 30px;
+}
+
+.main .main-right .btn-one {
+  display: inline-block;
+  width: 298px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  background: #ff6700;
+  border-color: #ff6700;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.main .main-right .btn-two {
+  display: inline-block;
+  width: 140px;
+  height: 52px;
+  line-height: 52px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s;
+  font-size: 16px;
+  position: relative;
+  background: #b0b0b0;
+  color: #fff;
+}
+
+.main .main-right .main-six {
+  margin: 15px 0 50px;
+}
+
+.main .main-right .main-six em {
+  display: inline-block;
+  font-style: normal;
+  color: #b0b0b0;
+  font-size: 14px;
+  margin: 0 20px 0 10px;
+}
+
+.main .main-right .main-six i {
+  color: #b0b0b0;
+  font-size: 16px;
+  vertical-align: middle;
+}
